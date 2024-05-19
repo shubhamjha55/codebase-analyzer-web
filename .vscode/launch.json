@@ -1,26 +1,25 @@
 {
-    "version": "0.2.0",
-    "configurations": [
-      {
-        "name": "Python: Sample App Backend",
-        "type": "python",
-        "request": "launch",
-        "module": "flask",
-        "cwd": "${workspaceFolder}/backend",
-        "env": {
-            "FLASK": "app:app",
-            "FLASK_ENV": "development",
-            "FLASK_DEBUG": "0"
-        },
-        "args": [
-            "run",
-            "--no-reload",
-            "-p 5000"
-        ],
-        "console": "integratedTerminal",
-        "justMyCode": false,
-        "envFile": "${workspaceFolder}/.env",
-    }
-    ]
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Python: Sample App Backend",
+      "type": "python",
+      "request": "launch",
+      "module": "flask",
+      "cwd": "${workspaceFolder}",
+      "env": {
+          "FLASK_APP": "app:app",
+          "FLASK_ENV": "development",
+          "FLASK_DEBUG": "0"
+      },
+      "args": [
+          "run",
+          "--no-reload",
+          "-p 5000"
+      ],
+      "console": "integratedTerminal",
+      "justMyCode": false,
+      "envFile": "${workspaceFolder}/.env",
   }
-  
+  ]
+}
